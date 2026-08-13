@@ -4,8 +4,15 @@ A sentiment classifier fine-tuned on the Amazon Fine Food Reviews dataset, using
 WordNet-based synthetic augmentation to address class imbalance, deployed as a
 live Streamlit app backed by a model hosted on Hugging Face.
 
-**Live demo:** https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/
-**Model:** https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model
+
+## Links
+
+| | |
+|---|---|
+| Dataset Used | https://www.kaggle.com/datasets/dongrelaxman/amazon-reviews-dataset |
+| Google Colab | https://colab.research.google.com/drive/1GCxkUvlMCRDJFK5HqDZ1JDKssXL_fD6L |
+| Live Demo | https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/ |
+| Model | https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model |
 
 ## Overview
 
@@ -56,14 +63,6 @@ trained model gets pushed to the Hub and picked up by the live app.
 ```bash
 python train.py
 ```
-## Links
-
-| | |
-|---|---|
-| Dataset Used | https://www.kaggle.com/datasets/dongrelaxman/amazon-reviews-dataset |
-| Google Colab | https://colab.research.google.com/drive/1GCxkUvlMCRDJFK5HqDZ1JDKssXL_fD6L |
-| Live Demo | https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/ |
-| Model | https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model |
 
 ## Contributors
 
