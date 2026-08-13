@@ -56,11 +56,19 @@ trained model gets pushed to the Hub and picked up by the live app.
 ```bash
 python train.py
 ```
+## Links
+
+| | |
+|---|---|
+| Dataset Used | https://www.kaggle.com/datasets/dongrelaxman/amazon-reviews-dataset |
+| Google Colab | https://colab.research.google.com/drive/1GCxkUvlMCRDJFK5HqDZ1JDKssXL_fD6L |
+| Live Demo | https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/ |
+| Model | https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model |
 
 ## Contributors
 
 - [Sasaki-28](https://github.com/Sasaki-28)
-- Romil Sinha
+- [Prajwal](https://github.com/the7prajwal)
 
 ## License
 
