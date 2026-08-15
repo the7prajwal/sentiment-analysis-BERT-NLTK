@@ -1,6 +1,4 @@
-<img width="1920" height="1200" alt="Screenshot 2026-08-05 133531" src="https://github.com/user-attachments/assets/15a13494-db2b-459e-9415-02caeeed0fbb" /># Sentiment Analysis — GAN-Augmented BERT
-
-A sentiment classifier fine-tuned on the Amazon Fine Food Reviews dataset, using
+<img width="1920" height="1200" alt="Screenshot 2026-08-15 181232" src="https://github.com/user-attachments/assets/153ca597-190a-4322-8167-5ee0b7cf05b3" />A sentiment classifier fine-tuned on the Amazon Fine Food Reviews dataset, using
 WordNet-based synthetic augmentation to address class imbalance, deployed as a
 live Streamlit app backed by a model hosted on Hugging Face.
 
@@ -22,13 +20,14 @@ score.
 
 ### Positive Sentiment
 
-![Positive sentiment prediction](<img width="1920" height="1200" alt="Screenshot 2026-08-15 181250" src="https://github.com/user-attachments/assets/f8c202eb-16e8-4e47-9e32-a54ab48efcc9" />
-)
+![Positive sentiment prediction]:<img width="1920" height="1200" alt="positive" src="https://github.com/user-attachments/assets/34ae245c-4555-4167-b025-8129a17bc356" />
+
+
 
 ### Negative Sentiment
 
-![Negative sentiment prediction](<img width="1920" height="1200" alt="Screenshot 2026-08-15 181232" src="https://github.com/user-attachments/assets/23ba8470-2649-4a2a-86b4-f383800beae9" />
-)
+![Negative sentiment prediction]:<img width="1920" height="1200" alt="negative" src="https://github.com/user-attachments/assets/d3825a95-222a-4b58-ac7a-340f5b1d38a3" />
+
 
 
 ## Overview
