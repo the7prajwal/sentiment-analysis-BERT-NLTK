@@ -1,4 +1,4 @@
-# Sentiment Analysis — GAN-Augmented BERT
+<img width="1920" height="1200" alt="Screenshot 2026-08-05 133531" src="https://github.com/user-attachments/assets/15a13494-db2b-459e-9415-02caeeed0fbb" /># Sentiment Analysis — GAN-Augmented BERT
 
 A sentiment classifier fine-tuned on the Amazon Fine Food Reviews dataset, using
 WordNet-based synthetic augmentation to address class imbalance, deployed as a
@@ -14,6 +14,23 @@ live Streamlit app backed by a model hosted on Hugging Face.
 | Live Demo | https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/ |
 | Model | https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model |
 
+## Web Application
+
+The trained BERT model is deployed through a Streamlit web application that
+accepts product reviews and predicts their sentiment along with a confidence
+score.
+
+### Positive Sentiment
+
+![Positive sentiment prediction](<img width="1920" height="1200" alt="Screenshot 2026-08-15 181250" src="https://github.com/user-attachments/assets/f8c202eb-16e8-4e47-9e32-a54ab48efcc9" />
+)
+
+### Negative Sentiment
+
+![Negative sentiment prediction](<img width="1920" height="1200" alt="Screenshot 2026-08-15 181232" src="https://github.com/user-attachments/assets/23ba8470-2649-4a2a-86b4-f383800beae9" />
+)
+
+
 ## Overview
 
 The dataset is naturally imbalanced (roughly 4:1 positive-to-negative reviews).
@@ -23,10 +40,27 @@ WordNet synonym replacement and added to the training set before a final
 fine-tuning pass. See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the full
 pipeline breakdown.
 
-| | Baseline (pre-augmentation) | Final (post-augmentation) |
-|---|---|---|
-| Accuracy | 87.5% | 95.1% |
-| Macro F1 | — | 0.95 |
+## Model Performance
+
+| Metric | Baseline | With Data Augmentation | Improvement |
+|---|---:|---:|---:|
+| Accuracy | 87.45% | **95.13%** | **+7.68 pp** |
+| Macro Precision | 0.81 | **0.95** | **+0.14** |
+| Macro Recall | 0.76 | **0.95** | **+0.19** |
+| Macro F1-Score | 0.78 | **0.95** | **+0.17** |
+| Weighted F1-Score | 0.87 | **0.95** | **+0.08** |
+
+### Per-Class Performance
+
+| Class | Metric | Baseline | With Data Augmentation |
+|---|---|---:|---:|
+| 0 | Precision | 0.72 | **0.94** |
+| 0 | Recall | 0.58 | **0.96** |
+| 0 | F1-Score | 0.64 | **0.95** |
+| 1 | Precision | 0.90 | **0.96** |
+| 1 | Recall | 0.94 | **0.94** |
+| 1 | F1-Score | 0.92 | **0.95** |
+
 
 ## Repo structure
 
