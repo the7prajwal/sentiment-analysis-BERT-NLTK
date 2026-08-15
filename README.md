@@ -1,5 +1,7 @@
-<img width="1920" height="1200" alt="Screenshot 2026-08-15 181232" src="https://github.com/user-attachments/assets/153ca597-190a-4322-8167-5ee0b7cf05b3" />A sentiment classifier fine-tuned on the Amazon Fine Food Reviews dataset, using
+A sentiment classifier fine-tuned on the Amazon Fine Food Reviews dataset, using
 WordNet-based synthetic augmentation to address class imbalance, deployed as a
+live Streamlit app backed by a model hosted on Hugging Face.
+ as a
 live Streamlit app backed by a model hosted on Hugging Face.
 
 
