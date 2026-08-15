@@ -43,7 +43,8 @@ pipeline breakdown.
 
 ## Model Performance
 
-| Metric | Baseline | With Data Augmentation | Improvement |
+| Metric | Baseline |  With Data   | Improvement |
+|        |          | Augmentation |             |
 |---|---:|---:|---:|
 | Accuracy | 87.45% | **95.13%** | **+7.68 pp** |
 | Macro Precision | 0.81 | **0.95** | **+0.14** |
@@ -53,7 +54,8 @@ pipeline breakdown.
 
 ### Per-Class Performance
 
-| Class | Metric | Baseline | With Data Augmentation |
+| Class | Metric | Baseline | With Data    |
+|       |        |          | Augmentation |
 |---|---|---:|---:|
 | 0 | Precision | 0.72 | **0.94** |
 | 0 | Recall | 0.58 | **0.96** |
