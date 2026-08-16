@@ -1,6 +1,6 @@
 """
 train.py
-Sentiment Analysis - BERT fine-tuning with GAN-style (WordNet synonym) augmentation.
+Sentiment Analysis - BERT fine-tuning with NLP (WordNet synonym) augmentation.
 
 Pipeline:
 1. Load and clean Amazon Fine Food Reviews (Reviews.csv)
