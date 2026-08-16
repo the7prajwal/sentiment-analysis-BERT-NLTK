@@ -47,15 +47,15 @@ Reviews.csv (Amazon Fine Food Reviews)
 - **Max sequence length:** 128 tokens
 - **Training:** Hugging Face `Trainer`, 2 epochs, batch size 8
 
-## Why WordNet synonym replacement instead of a true GAN
+## Why WordNet synonym replacement instead of a GAN
 
-The augmentation step is referred to as "GAN-style" in the app title, but the
-implementation used is WordNet synonym replacement (via `nltk.corpus.wordnet`):
-each negative review has one word swapped for a synonym, generating three
-synthetic variants per original review. This is a lightweight, dependency-light
-way to expand the minority class without needing to train a separate
-generative adversarial network. If a true GAN/VAE-based text augmenter is
-added later, this doc should be updated to reflect that.
+A GAN-based augmenter was considered early on, but our mentor pointed out
+that GAN-based text augmentation is a common (and often overused) approach,
+and suggested exploring an alternative. We settled on WordNet synonym
+replacement (via `nltk.corpus.wordnet`): each negative review has one word
+swapped for a synonym, generating three synthetic variants per original
+review. This is a lightweight, dependency-light way to expand the minority
+class without needing to train a separate generative model.
 
 ## Class imbalance note
 
