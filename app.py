@@ -1,21 +1,18 @@
 import streamlit as st
 import torch
-from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # Load model and tokenizer
-model = BertForSequenceClassification.from_pretrained(
+model = AutoModelForSequenceClassification.from_pretrained(
     "Sasaki2801/sentiment-analysis-bert-model"
 )
-
-tokenizer = BertTokenizer.from_pretrained(
+tokenizer = AutoTokenizer.from_pretrained(
     "Sasaki2801/sentiment-analysis-bert-model"
 )
-
 model.eval()
 
 # Title
 st.title("Sentiment Analysis using NLP-Augmented BERT")
-
 st.write("Enter a product review below:")
 
 # User input
@@ -23,7 +20,6 @@ review = st.text_area("Review Text")
 
 # Prediction
 if st.button("Predict Sentiment"):
-
     inputs = tokenizer(
         review,
         return_tensors="pt",
@@ -31,17 +27,12 @@ if st.button("Predict Sentiment"):
         padding=True,
         max_length=128
     )
-
     with torch.no_grad():
         outputs = model(**inputs)
-
     prediction = torch.argmax(outputs.logits, dim=1).item()
-
     confidence = torch.softmax(outputs.logits, dim=1)[0][prediction].item()
-
     if prediction == 1:
         st.success("Positive Review 😊")
     else:
         st.error("Negative Review 😠")
-
     st.write(f"Confidence Score: {confidence:.2f}")
