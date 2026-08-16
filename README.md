@@ -14,23 +14,6 @@ live Streamlit app backed by a model hosted on Hugging Face.
 | Live Demo | https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/ |
 | Model | https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model |
 
-## Web Application
-
-The trained BERT model is deployed through a Streamlit web application that
-accepts product reviews and predicts their sentiment along with a confidence
-score.
-
-### Positive Sentiment
-
-![Positive sentiment prediction]:<img width="1920" height="1200" alt="positive" src="https://github.com/user-attachments/assets/34ae245c-4555-4167-b025-8129a17bc356" />
-
-
-
-### Negative Sentiment
-
-![Negative sentiment prediction]:<img width="1920" height="1200" alt="negative" src="https://github.com/user-attachments/assets/d3825a95-222a-4b58-ac7a-340f5b1d38a3" />
-
-
 
 ## Overview
 
