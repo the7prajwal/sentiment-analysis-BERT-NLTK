@@ -11,9 +11,23 @@ live Streamlit app backed by a model hosted on Hugging Face.
 |---|---|
 | Dataset Used | https://www.kaggle.com/datasets/dongrelaxman/amazon-reviews-dataset |
 | Google Colab | https://colab.research.google.com/drive/1GCxkUvlMCRDJFK5HqDZ1JDKssXL_fD6L |
-| Live Demo | https://sentiment-analysis-bert-6qf92de5ynrg2r9gknjbvv.streamlit.app/ |
+| Live Demo | https://sentiment-analysis-bert-nltk.streamlit.app/ |
 | Model | https://huggingface.co/Sasaki2801/sentiment-analysis-bert-model |
 
+## Web Application
+
+The trained BERT model is deployed through a Streamlit web application that
+accepts product reviews and predicts their sentiment along with a confidence
+score.
+
+### Positive Sentiment
+
+![Positive sentiment prediction]<img width="800" height="600" alt="positive" src="https://github.com/user-attachments/assets/dee013e0-e69f-4466-9a4d-2b256c3774be" />
+
+
+### Negative Sentiment
+
+![Negative sentiment prediction]<img width="800" height="600" alt="negative" src="https://github.com/user-attachments/assets/fae31e9d-7635-427a-a4b0-3349605b0819" />
 
 ## Overview
 
