@@ -14,7 +14,7 @@ tokenizer = BertTokenizer.from_pretrained(
 model.eval()
 
 # Title
-st.title("Sentiment Analysis using GAN-Augmented BERT")
+st.title("Sentiment Analysis using NLP-Augmented BERT")
 
 st.write("Enter a product review below:")
 
